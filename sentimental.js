@@ -64,6 +64,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
   window.setTimeout( function () {
     typeChar(100);
-  }, 10000)
+  }, 2000)
 
 })
