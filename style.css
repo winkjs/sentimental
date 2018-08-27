@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%
+}
+
+body {
+  background: #c8ccd1;
+  transition: all 2s ease;
+}
+
+.full {
+  border: 0;
+
+  display: block;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 5rem;
+  height: 70%;
+
+  font-family: 'Playfair Display', serif;
+  font-family: 'Ultra', serif;
+  font-size: 2rem;
+  font-style: italic;
+
+  background-color: transparent;
+  color: white;
+}
+
+textarea:focus {
+  outline: none;
+}
