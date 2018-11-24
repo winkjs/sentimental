@@ -22,6 +22,9 @@ var colorize = function ( score ) {
   var s = Math.round( score / 2.0 );
   var color;
 
+  console.log(s);
+  document.getElementById('score').innerHTML = s;
+
   if ( s === 0 ) {
     color = neutral;
   } else if ( s > 0 ) {
@@ -40,8 +43,13 @@ document.getElementById( "textarea" ).addEventListener( "keydown", function () {
 document.addEventListener( 'DOMContentLoaded', function () {
   var poems = [
     "Some blues are sad\nBut some are glad,\nDark-sad or bright-glad\nThey're all blues.\n\nThe colors of colors\nThe blues are more than a color\nThey're a moan of pain\nA taste of strife\nAnd a sad refrain.",
+    "Today was not fun.",
+    "Sometimes I can be so short sighted.",
+    "That is just what I need, great! Terrific!",
+    "Not so well done my boy! I am unhappy.",
+    "Got a flat tyre on my way to the mall 😕 This is just great 😒😒",
   ]
-  var text = poems[0], i=0;
+  var text = poems[5], i=0;
 
   function typeChar(t) {
     document.getElementById( "textarea" ).value =  document.getElementById( "textarea" ).value + text[i];

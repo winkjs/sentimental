@@ -4,7 +4,7 @@
   "description": "",
   "main": "sentimental.js",
   "dependencies": {
-    "wink-sentiment": "^4.0.1"
+    "wink-sentiment": "^5.0.1"
   },
   "devDependencies": {
     "browserify": "^16.2.2"
