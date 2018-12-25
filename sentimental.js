@@ -22,9 +22,7 @@ var colorize = function ( score ) {
   var s = Math.round( score / 2.0 );
   var color;
 
-  console.log(s);
-  document.getElementById('score').innerHTML = s;
-
+  // Update color
   if ( s === 0 ) {
     color = neutral;
   } else if ( s > 0 ) {
@@ -32,8 +30,16 @@ var colorize = function ( score ) {
   } else {
     color = sad[ Math.abs( s ) - 1];
   }
-
   document.body.style.backgroundColor = '#' + color;
+
+  // Update score and legend
+  document.getElementById('score').innerHTML = s;
+  var relativePosition = Math.abs(s) * 10;
+  relativePosition = (relativePosition > 40 ) ? 40 : relativePosition;
+  relativePosition = ( s < 0 ) ? (relativePosition * - 1) : relativePosition;
+  var position = 50 + relativePosition;
+  document.getElementById('score').style.left = position + '%';
+  console.log(position);
 }
 
 document.getElementById( "textarea" ).addEventListener( "keydown", function () {
@@ -49,7 +55,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     "Not so well done my boy! I am unhappy.",
     "Got a flat tyre on my way to the mall 😕 This is just great 😒😒",
   ]
-  var text = poems[5], i=0;
+  var text = poems[0], i=0;
 
   function typeChar(t) {
     document.getElementById( "textarea" ).value =  document.getElementById( "textarea" ).value + text[i];

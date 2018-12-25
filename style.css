@@ -10,6 +10,44 @@ body {
   transition: all 2s ease;
 }
 
+.legend {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;;
+  background-image:
+    linear-gradient(
+      to right,
+      #161E61,
+      #23266D,
+      #282C73,
+      #36357B,
+      #565394,
+      #c8ccd1,
+      #935578,
+      #A55E7B,
+      #AE637E,
+      #BB7188,
+      #BD7D92
+    );
+}
+
+#score {
+  transition: left 1s ease;
+  background: #fff;
+  display: inline-block;
+  margin-top: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Ultra', serif;
+  color: #777;
+  line-height: 30px;
+  position: absolute;
+  left: 50%;
+}
+
 .full {
   border: 0;
 
