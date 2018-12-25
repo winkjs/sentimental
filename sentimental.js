@@ -55,7 +55,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
     "Not so well done my boy! I am unhappy.",
     "Got a flat tyre on my way to the mall 😕 This is just great 😒😒",
   ]
-  var text = poems[0], i=0;
+  var i=0;
+  var params = new URLSearchParams(window.location.search);
+  var text = params.has('text') ? params.get('text') : poems[0];
+
+
 
   function typeChar(t) {
     document.getElementById( "textarea" ).value =  document.getElementById( "textarea" ).value + text[i];
