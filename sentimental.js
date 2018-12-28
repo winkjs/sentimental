@@ -48,6 +48,7 @@ document.getElementById( "textarea" ).addEventListener( "keydown", function () {
 
 document.addEventListener( 'DOMContentLoaded', function () {
   var poems = [
+    "Earthquakes thunder past,\nbut the canary survives,\na yellow phrase on \nthe perennial.\nWhirlwinds sunder our lives\nbut small things still matter.",
     "Some blues are sad\nBut some are glad,\nDark-sad or bright-glad\nThey're all blues.\n\nThe colors of colors\nThe blues are more than a color\nThey're a moan of pain\nA taste of strife\nAnd a sad refrain.",
     "Today was not fun.",
     "Sometimes I can be so short sighted.",
@@ -57,7 +58,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
   ]
   var i=0;
   var params = new URLSearchParams(window.location.search);
-  var text = params.has('text') ? params.get('text') : poems[0];
+
+  if ( !params.has('text') ) return;
+  var text = params.get('text');
 
 
 
@@ -81,7 +84,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
   }
 
   window.setTimeout( function () {
+    document.getElementById( "textarea" ).value = "";
     typeChar(100);
-  }, 2000)
+  }, 500)
 
 })
