@@ -2,12 +2,35 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%
+  height: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,Seogoe UI,Roboto,Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 body {
   background: #c8ccd1;
   transition: all 2s ease;
+}
+
+.header {
+  padding: 0 5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  background-color: #c8ccd1;
+  height: 65px;
+  margin: 0;
+}
+
+.header-heading {
+  float: left;
+}
+
+.header-poweredby {
+  float: right;
+  margin-top: 25px;
+}
+
+.header-poweredby a {
+  color: #17215F;
 }
 
 .legend {
@@ -52,8 +75,8 @@ body {
   border: 0;
 
   display: block;
-  width: 1140px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
   padding: 5rem;
   height: 70%;
 
