@@ -4,19 +4,19 @@ var colorize = function ( score ) {
   var neutral = 'c8ccd1';
 
   var sad = [ // From sad to saddest
-    '565394',
-    '36357B',
-    '282C73',
-    '23266D',
-    '161E61'
+    '6e76af',
+    '495193',
+    '323a80',
+    '1e276b',
+    '1e276b'
   ];
 
   var happy = [ // From happy to happiest
-    '935578',
-    'A55E7B',
-    'AE637E',
-    'BB7188',
-    'BD7D92'
+    '89415e',
+    'a55e7b',
+    'd0809d',
+    'e09bb4',
+    'eebacd'
   ];
 
   var s = Math.round( score / 2.0 );

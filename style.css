@@ -41,17 +41,17 @@ body {
   background-image:
     linear-gradient(
       to right,
-      #161E61,
-      #23266D,
-      #282C73,
-      #36357B,
-      #565394,
+      #1e276b,
+      #1e276b,
+      #323a80,
+      #495193,
+      #6e76af,
       #c8ccd1,
-      #935578,
-      #A55E7B,
-      #AE637E,
-      #BB7188,
-      #BD7D92
+      #89415e,
+      #a55e7b,
+      #d0809d,
+      #e09bb4,
+      #eebacd
     );
 }
 
